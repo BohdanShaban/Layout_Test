@@ -1,0 +1,134 @@
+/* Specification */
+
+* {
+    border: 0.5px solid red;
+
+    /* border: 1px solid blue; */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* FIRST SCREEN */
+
+/* STATIC POSITION BY DEFAULT */
+header {
+
+    /* background-image: url(../img/pexels-photo-27411.jpg) no-repeat center top / cover; */
+    /* height: 338px; */
+}
+
+/* .jumbotron {
+
+    background-image: url(../img/pexels-photo-27411.jpg);
+    background-size: cover;
+    height: 338px;
+
+} */
+
+/* .header__wrapper {
+
+    height: 338px;
+
+    /* height: auto;
+    max-width: 100%; 
+} */
+
+.masthead {
+    height: 338px;
+
+    background-image: url(../img/pexels-photo-261187.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+   
+
+    /* BLUR EFECT */
+
+    /* filter: brightness(50%); */
+        filter: blur(6px);
+        
+        -webkit-filter: blur(6px);
+    /* opacity: .6; */
+    
+}
+
+.bg_text p {
+
+    margin-top: 30px;
+    /* text-decoration: underline; */
+}
+
+.bg_text {
+
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+
+    /*  POSITIONING SCREEN GALLERY*/
+
+    .galery {
+
+        position: absolute;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        width: 80%;
+        padding: 20px;
+
+    }
+
+    .category {
+
+        /* width: 263px;
+        height: 218px; */
+
+        border: 3px solid #f1f1f1;
+
+        /* PICTURE */
+
+        /* width: 263px;
+        height: 155px; */
+
+        margin-bottom: 20px;
+
+
+    }
+
+    .category__img {
+
+        /* PICTURE */
+
+        /* width: 263px;
+        height: 155px; */
+
+        margin-bottom: 25px;
+    }
+
+    .category__header {
+
+        text-align: center;
+    }
+
+
+/* THIRD SCREEN , WHITE FON */
