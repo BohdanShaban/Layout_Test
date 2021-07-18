@@ -1,0 +1,62 @@
+/* Specification */
+
+    /* border: 0.5px solid red; */
+    /* border: 1px solid blue; */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.main_sect {
+    min-height: 1420px;
+}
+
+/* background: url('../img/pexels-photo-261187.jpeg') 50%/cover no-repeat; */
+/* background: url('../img/pexels-photo-261187.jpeg') top center/cover no-repeat; */
+
+.backgr_wrap {
+    position: relative; 
+    height: 338px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* You could use :after - it doesn't really matter */
+.backgr_wrap::before {    
+    content: "";
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/pexels-photo-261187.jpeg') 50%/cover no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* opacity: 0.6; */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+
+h1 {
+    position: relative;
+    z-index: 2;
+
+    margin: 0 973px 43px 0;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #ffffff;
+}
